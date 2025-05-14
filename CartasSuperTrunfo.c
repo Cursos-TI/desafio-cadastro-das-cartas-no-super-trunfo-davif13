@@ -7,7 +7,7 @@
 //Teste larissa
 
 int main() {
-    // Variáveis para as duas cartas do Super Trunfo em C
+       // Variáveis para as duas cartas do Super Trunfo em C
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char nomeCidade1[50], nomeCidade2[50];
@@ -32,7 +32,6 @@ int main() {
     scanf(" %f", &pib1);
     printf("Numero de Pontos Turisticos: ");
     scanf(" %d", &pontosTuristicos1);
-
 
     // Leitura dos dados da Carta 2
     printf("\nInsira os dados da Carta 2:\n");
@@ -60,6 +59,8 @@ int main() {
     printf("Area: %.2f km²\n", area1);
     printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km2\n", populacao1 / area1);
+    printf("PIB per Capita: %.2f reais\n", pib1 / populacao1);
 
     // Exibição dos dados da Carta 2
     printf("\nCarta 2:\n");
@@ -70,7 +71,8 @@ int main() {
     printf("Area: %.2f km²\n", area2);
     printf("PIB: %.2f bilhoes de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
-
+    printf("Densidade Populacional: %.2f hab/km2\n", populacao2 / area2);
+    printf("PIB per Capita: %.2f reais\n", pib2 / populacao2);
 
     return 0;
 }
